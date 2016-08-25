@@ -1,0 +1,44 @@
+img{
+	height: auto; 
+	max-width: 100% !important; 
+}
+
+button{
+	    border-color: #CA4D57;
+	    background-color: #CA4D57;
+}
+
+.intro-paragraph h1{
+	text-align: center; 
+	margin-top: 15px; 
+}
+
+.align-center{
+	text-align: center
+}
+
+.video-container{
+	padding: 10px; 
+	text-align: center; 
+	margin-bottom: 30px !important; 
+}
+
+@media screen and (min-width: 700px) {
+    video {
+       width: 704px; 
+       height: 480px; 
+    }
+}
+
+.plyr__play-large{
+	height: 50px; 
+	background-color: #659D32 !important; 
+}
+
+.plyr__progress--played, .plyr__volume--display{
+	color: #659D32 !important; 
+}
+
+.plyr--video .plyr__controls button.tab-focus:focus, .plyr--video .plyr__controls button:hover{
+	background-color: #659D32 !important; 
+}

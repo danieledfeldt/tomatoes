@@ -1,6 +1,6 @@
-# tomatoes
+# Raspberry Pi timelapse project. 
+This is a hobby project where a raspberry pi takes timelapse photos of beef tomato plants and creates a new mp4 video everyday with the pictures. Unfortunately the location of cameras was not very well-reasoned. The plants soon became too high to be seen fit in the picture. The more you change the location of the camera, the worse will the timelapse video be. 
 
-camera
 
 # Crontab
 I choosed to take a picture every hour from 9:00-18:00. If you would like another interval between your photos and would like help to set up the interval I can recommend you http://crontab-generator.org/. 
@@ -34,4 +34,5 @@ mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 
 ffmpeg -i timelapse2.avi -acodec aac -strict experimental -ac 2 -ab 128k -vcodec libx264 -vpre slow -f mp4 -crf 22 -s 640x360 $DATE.mp4
 ``` 
 
-#More to come 
+#HTML 
+The source of my website can be found in the HTML folder. 

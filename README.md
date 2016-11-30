@@ -21,10 +21,13 @@ convert -thumbnail 800 /var/www/tomatoes/$DATE.jpg /var/www/tomatoes/thumb_800_$
 ```
 
 ## The video script (/home/pi/videoscript.sh)
-This script will
+
 1. Find all .jpg files in the folder except the thumbnails, sort them and list them in a text file.
-2. Create a video in avi format from the pictures listed in the text file 
-3. Convert the avi to mp4 with ffmpeg. 
+
+2. Create a video in avi format from the pictures listed in the text file
+
+3. Convert the avi to mp4 with ffmpeg.
+
 ```
 #! /bin/bash
 cd /var/www/tomatoes/

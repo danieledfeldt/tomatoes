@@ -6,7 +6,9 @@ This is a hobby project where a raspberry pi takes timelapse photos of beef toma
 I choosed to take a picture every hour from 9:00-18:00. If you would like another interval between your photos and would like help to set up the interval I can recommend you http://crontab-generator.org/. 
 
 Edit your config by typeing `crontab -e` in the terminal and add the following lines 
-`9-18 * * * sh /home/pi/timelapse/camera.sh` . 
+
+`9-18 * * * sh /home/pi/timelapse/camera.sh` 
+
 `0 2 * * * sh /home/pi/videoscript.sh` 
 
 ## The camera script (/home/pi/timelapse/camera.sh) 

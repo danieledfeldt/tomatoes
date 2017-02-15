@@ -1,5 +1,5 @@
 # Raspberry Pi timelapse project. 
-This is a hobby project where a raspberry pi takes timelapse photos of beef tomato plants and creates a new mp4 video everyday with the pictures. Unfortunately the location of cameras was not very well-reasoned. The plants soon became too high to be seen fit in the picture. The more you change the location of the camera, the worse will the timelapse video be. 
+This is a hobby project where a raspberry pi takes timelapse photos of beef tomato plants and creates a new video everyday. Unfortunately the plants soon became too high to be seen fit in the picture. The more you change the location of the camera, the worse will the timelapse video be. 
 
 
 # Crontab

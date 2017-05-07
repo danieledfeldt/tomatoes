@@ -1,31 +1,4 @@
-<?php 
-	if(isset($_GET['action']) && isset($_POST['delete_pictures'])){
-		if(is_array($_POST['delete_pictures'])){
-			foreach ($_POST['delete_pictures'] as $key => $entry) {
-				if ($entry != "." && $entry != ".." && $entry != "camera.sh") {
-		        	$ext = substr($entry, strrpos($entry, '.') + 1);
-				    if(in_array($ext, array("jpg","jpeg","png","gif"))){
-						unlink("tomatoes/" . $entry); 
-				    }
-	        	}
-			}
-		}
-		header("Location: " .  $_SERVER['PHP_SELF']);
-		die();
-	}
-
-	if($_GET['action'] == 'takephoto'){
-		$ok = shell_exec("sh tomatoes/camera.sh"); 
-		if($ok = "ok"){
-			header("Location: " .  $_SERVER['PHP_SELF']);
-			die();
-		}else{
-			// Might have to run sudo chmod 777 /dev/vchiq
-		}
-	}else{
-	//	No action performed 
-	}
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
